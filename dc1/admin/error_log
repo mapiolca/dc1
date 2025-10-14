@@ -1,8 +1,0 @@
-[02-Oct-2025 21:09:23 Europe/Paris] PHP Fatal error:  Uncaught Error: Call to undefined function lmdb_prepare_head() in /home/ipsservi/public_html/lesmetiersdubatiment/develop/htdocs/custom/dc1/admin/setup.php:54
-Stack trace:
-#0 {main}
-  thrown in /home/ipsservi/public_html/lesmetiersdubatiment/develop/htdocs/custom/dc1/admin/setup.php on line 54
-[02-Oct-2025 21:09:39 Europe/Paris] PHP Fatal error:  Uncaught Error: Call to undefined function dc1_prepare_head() in /home/ipsservi/public_html/lesmetiersdubatiment/develop/htdocs/custom/dc1/admin/setup.php:54
-Stack trace:
-#0 {main}
-  thrown in /home/ipsservi/public_html/lesmetiersdubatiment/develop/htdocs/custom/dc1/admin/setup.php on line 54
