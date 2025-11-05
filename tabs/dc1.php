@@ -63,9 +63,9 @@ $form = new Form($db);
 $object = new Propal($db);
 $dc1 = new DC1($db);
 
-$canAddLines = $user->admin || $user->rights->delegation->myactions->create;
-$canReadLines = $user->admin || $user->rights->delegation->myactions->read;
-$canDeleteLines = $user->admin || $user->rights->delegation->myactions->delete;
+$canAddLines = $user->admin || $user->hasRight('dc1','write');
+$canReadLines = $user->admin || $user->hasRight('dc1','read');
+$canDeleteLines = $user->admin || $user->hasRight('dc1','delete');
 
 if (!$canReadLines)
 {

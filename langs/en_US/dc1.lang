@@ -11,6 +11,7 @@ SetupG=General
 
 DC1Setup= DC1 Settings - General
 ReadDc1Tab= Read the DC1 tab
+EditDc1Tab= Edit the contents of the DC1 tab
 
 lmdb_representant = Representative
 lmdb_representant_help = Ideally, in the format: Mr. LAST NAME First Name.

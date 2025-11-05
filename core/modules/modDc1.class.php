@@ -57,7 +57,7 @@ class modDc1 extends DolibarrModules
 		// Module description, used if translation string 'ModuleXXXDesc' not found (where XXX is value of numeric property 'numero' of module)
 		$this->description = "Module permettant remplir le formulaire DC1 depuis la proposition commerciale";
 		// Possible values for version are: 'development', 'experimental', 'dolibarr' or version
-		$this->version = '1.1.0';
+		$this->version = '1.1.1';
 		// Key used in llx_const table to save module status enabled/disabled (where MYMODULE is value of property name of module in uppercase)
 		$this->const_name = 'MAIN_MODULE_'.strtoupper($this->name);
 		// Where to store the module in setup page (0=common,1=interface,2=others,3=very specific)
@@ -116,7 +116,7 @@ class modDc1 extends DolibarrModules
 		// To add a new tab identified by code
 		$this->tabs = array();
 		$this->tabs[] = array(
-			'data'=>'propal:+dc1:DC1:dc1@dc1:$user->rights->dc1->DC1->read:/dc1/tabs/dc1.php?id=__ID__',
+			'data'=>'propal:+dc1:DC1:dc1@dc1:$user->hasRight("dc1", "read"):/dc1/tabs/dc1.php?id=__ID__',
 		); 
 
         // Dictionnaries
@@ -146,8 +146,16 @@ class modDc1 extends DolibarrModules
 		
 		$this->rights[$r][0] = $this->numero . sprintf('%02d', ($o * 10) + 1);
 		$this->rights[$r][1] = 'ReadDc1Tab';
-		$this->rights[$r][4] = 'DC1';
-		$this->rights[$r][5] = 'read';
+		$this->rights[$r][3] = 0;
+		$this->rights[$r][4] = 'read';
+		$this->rights[$r][5] = '';
+		$r++;
+		
+		$this->rights[$r][0] = $this->numero . sprintf('%02d', ($o * 10) + 2);
+		$this->rights[$r][1] = 'EditDc1Tab';
+		$this->rights[$r][3] = 0;
+		$this->rights[$r][4] = 'write';
+		$this->rights[$r][5] = '';
 		$r++;
 		
 		/*

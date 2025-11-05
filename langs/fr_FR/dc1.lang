@@ -13,7 +13,8 @@ PDFDC1LMDBDescription2016 = Modèle de Formulaire DC1 version 2016 (dépréciée
 PDFDC1LMDBDescription2019 = Modèle de Formulaire DC1 version 2019
 
 DC1Setup= Réglages DC1 - Général
-ReadDc1Tab= Lire l'onglet DC1
+ReadDc1Tab= Lire l'onglet DC1 et son contenu
+EditDc1Tab= Editer le contenu de l'onglet DC1
 
 lmdb_representant = Représentant
 lmdb_representant_help = Idéalement, sous le format : M. NOM Prénom.
@@ -86,4 +87,4 @@ DC1_PDF_Ref_consultation = Référence de la consultation :
 
 PDFDC1LMDBDescription = Modèle de Formulaire DC1 par Les Métiers du Bâtiment
 
-none = Aucun
+none = Aucun</b></b>
