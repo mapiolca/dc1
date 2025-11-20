@@ -2,18 +2,18 @@
 
 ## 1.1.2 (05/11/2025)
 
-- Harmonisation complète des traductions en_US/fr_FR
-- Ajout d'une page d'accueil d'administration documentée
-- Rédaction d'un README bilingue et mise à jour des informations de version
+- Harmonisation complète des traductions en_US/fr_FR / Full harmonisation of en_US / fr_FR translations
+- Ajout d'une page d'accueil d'administration documentée/Added a documented administration home page
+- Rédaction d'un README bilingue et mise à jour des informations de version/Added a bilingual README and updated version information
 
 ## 1.1.1 (05/11/2025)
 
-- Correction d'un problème empêchant la gestion correcte des permissions
+- Correction d'un problème empêchant la gestion correcte des permissions/Fixed an issue preventing proper permissions handling
 
 1.1.1 (03/09/2025)
 
-- Ajout de la version 2019 du formulaire DC1
+- Ajout de la version 2019 du formulaire DC1/Added the 2019 version of the DC1 form
 
 ## 1.0.0 (30/09/2025)
 
-- Création du module dédié aux Formulaires DC1
+- Création du module dédié aux Formulaires DC1/Created the dedicated module for DC1 forms
