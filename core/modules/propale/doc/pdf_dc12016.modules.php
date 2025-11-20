@@ -34,7 +34,7 @@ require_once DOL_DOCUMENT_ROOT.'/core/lib/company.lib.php';
 require_once DOL_DOCUMENT_ROOT.'/core/lib/functions2.lib.php';
 require_once DOL_DOCUMENT_ROOT.'/core/lib/pdf.lib.php';
 
-require_once DOL_DOCUMENT_ROOT.'/custom/dc1/class/dc1.class.php';
+dol_include_once('../../../../class/dc1.class.php');
 
 
 
