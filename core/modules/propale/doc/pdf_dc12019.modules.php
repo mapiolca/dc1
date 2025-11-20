@@ -457,7 +457,7 @@ class pdf_DC12019 extends ModelePDFPropales
 
 					if ($dc1_line->F_engagement == '1') {
 					
-						$pdf->writeHTMLCell(190,4, 114.75, 82.1, dol_htmlentitiesbr("X"),0,1);
+						$pdf->writeHTMLCell(190,4, 84.25, 78.5, dol_htmlentitiesbr("X"),0,1);
 						
 					}
 
