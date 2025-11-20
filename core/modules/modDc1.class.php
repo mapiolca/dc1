@@ -1,6 +1,5 @@
 <?php
-/* Copyright (C) 2018-2022	Pierre Ardoin		<mapoiolca@me.com>
-
+/* Copyright (C) 2025 Pierre Ardoin <developpeur@lesmetiersdubatiment.fr>
  *
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -9,7 +8,7 @@
  *
  * This program is distributed in the hope that it will be useful,
  * but WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
  * GNU General Public License for more details.
  *
  * You should have received a copy of the GNU General Public License
@@ -18,16 +17,16 @@
 
 
 /**
- * 		\defgroup   modDelegation     Module Delegation
- *      \file       htdocs/core/modules/modDelegation.class.php
- *      \ingroup    modDelegation
- *      \brief      Description and activation file for module modDelegation
+ * \defgroup   dc1     Module DC1
+ * \file       htdocs/custom/dc1/core/modules/modDc1.class.php
+ * \ingroup    dc1
+ * \brief      Description and activation file for module modDc1
  */
 include_once(DOL_DOCUMENT_ROOT ."/core/modules/DolibarrModules.class.php");
 
 /**
- * 		\class      modDelegation
- *      \brief      Description and activation class for module modDelegation
+ * \class      modDc1
+ * \brief      Description and activation class for module modDc1
  */
 class modDc1 extends DolibarrModules
 {
@@ -37,9 +36,9 @@ class modDc1 extends DolibarrModules
 	 */
 	function __construct($db)
 	{
-        global $langs, $conf;
+		global $langs, $conf;
 
-        $this->db = $db;
+		$this->db = $db;
 		// Id for module (must be unique).
 		// Use here a free id (See in Home -> System information -> Dolibarr for list of used modules id).
 		$this->numero = 450005;
@@ -57,7 +56,7 @@ class modDc1 extends DolibarrModules
 		// Module description, used if translation string 'ModuleXXXDesc' not found (where XXX is value of numeric property 'numero' of module)
 		$this->description = "Module permettant remplir le formulaire DC1 depuis la proposition commerciale";
 		// Possible values for version are: 'development', 'experimental', 'dolibarr' or version
-		$this->version = '1.1.1';
+		$this->version = '1.1.2';
 		// Key used in llx_const table to save module status enabled/disabled (where MYMODULE is value of property name of module in uppercase)
 		$this->const_name = 'MAIN_MODULE_'.strtoupper($this->name);
 		// Where to store the module in setup page (0=common,1=interface,2=others,3=very specific)
@@ -119,15 +118,15 @@ class modDc1 extends DolibarrModules
 			'data'=>'propal:+dc1:DC1:dc1@dc1:$user->hasRight("dc1", "read"):/dc1/tabs/dc1.php?id=__ID__',
 		); 
 
-        // Dictionnaries
-        $this->dictionnaries = array();
+		// Dictionnaries
+		$this->dictionnaries = array();
 
-        // Boxes
+		// Boxes
 		// Add here list of php file(s) stored in includes/boxes that contains class to show a box.
-        $this->boxes = array();			// List of boxes
+		$this->boxes = array();			// List of boxes
 
 
-        // Cronjobs (List of cron jobs entries to add when module is enabled)
+		// Cronjobs (List of cron jobs entries to add when module is enabled)
 		// unit_frequency must be 60 for minute, 3600 for hour, 86400 for day, 604800 for week
 		/* BEGIN MODULEBUILDER CRON */
 		$this->cronjobs = array();
