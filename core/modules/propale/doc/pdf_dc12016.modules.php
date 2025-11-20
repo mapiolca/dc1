@@ -289,7 +289,7 @@ class pdf_DC12016 extends ModelePDFPropales
 				
 				if (! empty($tplidx)) $pdf->useTemplate($tplidx);
 
-				include DOL_DOCUMENT_ROOT.'/custom/dc1/core/modules/propale/doc/DC1-2016/DC1-2016.php';
+				dol_include_once('./DC1-2016/DC1-2016.php');
 
 				$logo=$conf->mycompany->dir_output.'/logos/'.$this->emetteur->logo;
 
