@@ -34,7 +34,7 @@ require_once DOL_DOCUMENT_ROOT.'/core/lib/company.lib.php';
 require_once DOL_DOCUMENT_ROOT.'/core/lib/functions2.lib.php';
 require_once DOL_DOCUMENT_ROOT.'/core/lib/pdf.lib.php';
 
-require_once DOL_DOCUMENT_ROOT.'/custom/dc1/class/dc1.class.php';
+dol_include_once('../../../../dc1.class.php');
 
 
 
@@ -289,7 +289,7 @@ class pdf_DC12019 extends ModelePDFPropales
 				
 				if (! empty($tplidx)) $pdf->useTemplate($tplidx);
 
-				include DOL_DOCUMENT_ROOT.'/custom/dc1/core/modules/propale/doc/DC1-2019/DC1-2019.php';
+				dol_include_once('./DC1-2019/DC1-2019.php');
 
 				$logo=$conf->mycompany->dir_output.'/logos/'.$this->emetteur->logo;
 
