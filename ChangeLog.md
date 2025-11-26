@@ -1,5 +1,9 @@
 # DC1 ChangeLog
 
+## 1.1.3 (26/11/2025)
+
+- Ajoute la vérification de la dernière version disponible sur le Dolistore/Add a check for the latest version available on Dolistore.
+
 ## 1.1.2 (05/11/2025)
 
 - Harmonisation complète des traductions en_US/fr_FR / Full harmonisation of en_US / fr_FR translations
