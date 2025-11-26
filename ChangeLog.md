@@ -1,4 +1,8 @@
-# DC1 ChangeLog
+# CHANGELOG MODULE DC1 FOR [DOLIBARR ERP CRM](https://www.dolibarr.org)
+
+## 1.1.3 (26/11/2025)
+
+- Ajoute la vérification de la dernière version disponible sur le Dolistore/Add a check for the latest version available on Dolistore.
 
 ## 1.1.2 (05/11/2025)
 
