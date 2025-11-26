@@ -56,8 +56,8 @@ class modDc1 extends DolibarrModules
 		// Module description, used if translation string 'ModuleXXXDesc' not found (where XXX is value of numeric property 'numero' of module)
 		$this->description = "Module permettant remplir le formulaire DC1 depuis la proposition commerciale";
 		// Possible values for version are: 'development', 'experimental', 'dolibarr' or version
-		$this->version = '1.1.2';
-		$this->url_last_version = 'https://lesmetiersdubatiment.fr/moduleversion/ver.php?m=dc1'
+		$this->version = '1.1.3';
+		$this->url_last_version = 'https://moduleversion.lesmetiersdubatiment.fr/ver.php?m=dc1'
 		// Key used in llx_const table to save module status enabled/disabled (where MYMODULE is value of property name of module in uppercase)
 		$this->const_name = 'MAIN_MODULE_'.strtoupper($this->name);
 		// Where to store the module in setup page (0=common,1=interface,2=others,3=very specific)
