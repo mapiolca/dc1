@@ -50,14 +50,14 @@ class modDc1 extends DolibarrModules
 		$this->family = 'Les Métiers du Bâtiment';
 		// Module position in the family on 2 digits ('01', '10', '20', ...)
 		$this->module_position = '05';
-		
+
 		// Module label (no space allowed), used if translation string 'ModuleXXXName' not found (where XXX is value of numeric property 'numero' of module)
 		$this->name = 'dc1';
 		// Module description, used if translation string 'ModuleXXXDesc' not found (where XXX is value of numeric property 'numero' of module)
 		$this->description = "Module permettant remplir le formulaire DC1 depuis la proposition commerciale";
 		// Possible values for version are: 'development', 'experimental', 'dolibarr' or version
 		$this->version = '1.1.3';
-		$this->url_last_version = 'https://moduleversion.lesmetiersdubatiment.fr/ver.php?m=dc1'
+		$this->url_last_version = 'https://moduleversion.lesmetiersdubatiment.fr/ver.php?m=dc1';
 		// Key used in llx_const table to save module status enabled/disabled (where MYMODULE is value of property name of module in uppercase)
 		$this->const_name = 'MAIN_MODULE_'.strtoupper($this->name);
 		// Where to store the module in setup page (0=common,1=interface,2=others,3=very specific)
@@ -117,7 +117,7 @@ class modDc1 extends DolibarrModules
 		$this->tabs = array();
 		$this->tabs[] = array(
 			'data'=>'propal:+dc1:DC1:dc1@dc1:$user->hasRight("dc1", "read"):/dc1/tabs/dc1.php?id=__ID__',
-		); 
+		);
 
 		// Dictionnaries
 		$this->dictionnaries = array();
@@ -143,23 +143,23 @@ class modDc1 extends DolibarrModules
 		// Add here entries to declare new permissions
 		/* BEGIN MODULEBUILDER PERMISSIONS */
 		$o = 1;
-		
+
 		$this->rights[$r][0] = $this->numero . sprintf('%02d', ($o * 10) + 1);
 		$this->rights[$r][1] = 'ReadDc1Tab';
 		$this->rights[$r][3] = 0;
 		$this->rights[$r][4] = 'read';
 		$this->rights[$r][5] = '';
 		$r++;
-		
+
 		$this->rights[$r][0] = $this->numero . sprintf('%02d', ($o * 10) + 2);
 		$this->rights[$r][1] = 'EditDc1Tab';
 		$this->rights[$r][3] = 0;
 		$this->rights[$r][4] = 'write';
 		$this->rights[$r][5] = '';
 		$r++;
-		
+
 		/*
-		
+
 		$this->rights[$r][0] = $this->numero . sprintf("%02d", ($o * 10) + 1); // Permission id (must not be already used)
 		$this->rights[$r][1] = 'Read objects of Vierge'; // Permission label
 		$this->rights[$r][4] = 'myobject';
@@ -177,7 +177,7 @@ class modDc1 extends DolibarrModules
 		$r++;
 		*/
 		/* END MODULEBUILDER PERMISSIONS */
-			
+
 	}
 
 	/**
@@ -195,7 +195,7 @@ class modDc1 extends DolibarrModules
 		$result = $this->load_tables();
 
 		define('INC_FROM_DOLIBARR', true);
-		
+
 		$ext = new ExtraFields($db);
 
 		//$ext->addExtraField($attrname, $label, $type, $pos, $size, $element, $unique, $required, $default_value, $param, $alwayseditable, $perms, $list, $help, $computed, $entity, $langfile, $enabled, $sommable,$pdf)
