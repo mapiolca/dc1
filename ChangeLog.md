@@ -1,5 +1,10 @@
 # CHANGELOG MODULE DC1 FOR [DOLIBARR ERP CRM](https://www.dolibarr.org)
 
+## 1.1.5 (06/11/2026)
+
+- Maintient DC1 avant DC2 sur les propositions commerciales, indépendamment de l'ordre d'activation, sans ajouter d'onglet masqué par les droits.
+- Actualiser les déclarations de hooks par la mise à jour native du module dans chaque entité concernée ; conserver les réglages et attributions existants.
+
 ## 1.1.4 (25/08/2026)
 
 - Supprime les propriétés dynamiques obsolètes du descripteur sous PHP 8.2.
