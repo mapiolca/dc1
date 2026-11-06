@@ -47,3 +47,9 @@
 ### Utilisation
 - Ouvrir une proposition commerciale et remplir l'onglet **DC1**.
 - Générer le document depuis l'onglet **Proposition commerciale** en choisissant le modèle DC1.
+
+## Mise à jour 1.1.5 / Update 1.1.5
+
+DC1 précède DC2 grâce au hook natif `completeTabsHead` dans le contexte `globalcard` / `propalnote`, y compris sur la fiche DC1. Seuls les onglets déjà autorisés sont déplacés ; les autres onglets conservent leur ordre relatif. Actualiser les hooks persistés par la procédure native de mise à jour du module dans chaque entité, en conservant les réglages et droits. Aucun changement de données métier.
+
+DC1 precedes DC2 through the native `completeTabsHead` hook in the `globalcard` / `propalnote` context, including the DC1 page. Only existing authorized tabs are moved. Refresh persisted hooks through the native module update procedure in each entity, preserving settings and permissions.

@@ -114,6 +114,7 @@ if (!$error && !$cancel)
     }
 }
 
+$hookmanager->initHooks(array('dc1card', 'globalcard'));
 $head = propal_prepare_head($object);
 $current_head = 'dc1';
  

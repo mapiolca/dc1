@@ -1,1 +1,9 @@
-
+{
+    "name": "mapiolca/dc1",
+    "description": "DC1 public procurement application form for Dolibarr commercial proposals.",
+    "type": "dolibarr-module",
+    "license": "GPL-3.0-or-later",
+    "require": {
+        "php": ">=8.0"
+    }
+}
